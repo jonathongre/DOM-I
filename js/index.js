@@ -48,6 +48,9 @@ nav[2].innerHTML = siteContent['nav']['nav-item-3']
 nav[3].innerHTML = siteContent['nav']['nav-item-4']
 nav[4].innerHTML = siteContent['nav']['nav-item-5']
 nav[5].innerHTML = siteContent['nav']['nav-item-6']
+for (let i = 0; i < nav.length; i++) {
+    nav[i].style.color = 'green'
+}
 
 let cta = document.querySelector('.cta');
 
