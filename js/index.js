@@ -41,13 +41,25 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+let navHome = document.createElement('a')
+navHome.href = '#'
+
+let clickHere = document.createElement('a')
+clickHere.href = '#'
+
+let newNav = document.querySelector('nav')
+newNav.prepend(navHome)
+newNav.appendChild(clickHere)
+
 let nav = document.querySelectorAll("a");
-nav[0].innerHTML = siteContent['nav']['nav-item-1']
-nav[1].innerHTML = siteContent['nav']['nav-item-2']
-nav[2].innerHTML = siteContent['nav']['nav-item-3']
-nav[3].innerHTML = siteContent['nav']['nav-item-4']
-nav[4].innerHTML = siteContent['nav']['nav-item-5']
-nav[5].innerHTML = siteContent['nav']['nav-item-6']
+nav[0].innerHTML = 'Home'
+nav[1].innerHTML = siteContent['nav']['nav-item-1']
+nav[2].innerHTML = siteContent['nav']['nav-item-2']
+nav[3].innerHTML = siteContent['nav']['nav-item-3']
+nav[4].innerHTML = siteContent['nav']['nav-item-4']
+nav[5].innerHTML = siteContent['nav']['nav-item-5']
+nav[6].innerHTML = siteContent['nav']['nav-item-6']
+nav[7].innerHTML = 'Click Here'
 for (let i = 0; i < nav.length; i++) {
     nav[i].style.color = 'green'
 }
