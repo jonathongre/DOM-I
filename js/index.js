@@ -75,6 +75,12 @@ ctaTextH1.innerHTML = siteContent['cta']['h1']
 let ctaTextButton = document.querySelector('.cta .cta-text button');
 ctaTextButton.innerHTML = siteContent['cta']['button']
 ctaTextButton.style.fontWeight = 'bold'
+ctaTextButton.addEventListener('click', resize)
+
+function resize() {
+    ctaTextH1.style.fontSize = '90px'
+    ctaTextButton.textContent = 'That\'s Better'
+}
 
 let ctaImage = document.getElementById('cta-img');
 ctaImage.src = "img/header-img.png"
