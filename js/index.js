@@ -37,6 +37,9 @@ const siteContent = {
     },
 };
 
+let body = document.querySelector('body')
+body.style.backgroundColor = 'darkgray'
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -71,6 +74,7 @@ ctaTextH1.innerHTML = siteContent['cta']['h1']
 
 let ctaTextButton = document.querySelector('.cta .cta-text button');
 ctaTextButton.innerHTML = siteContent['cta']['button']
+ctaTextButton.style.fontWeight = 'bold'
 
 let ctaImage = document.getElementById('cta-img');
 ctaImage.src = "img/header-img.png"
